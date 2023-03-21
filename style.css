@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:wght@700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    margin-top: 10rem;
+    max-width: 1310px;
+    height: 728px;
+    background-color: hsl(30, 38%, 92%);
+    box-shadow: 2px 5px 5px rgba(116, 116, 116, 0.5);
+}
+.card{
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    width: 550px;
+    height: 405px;
+    border-radius: 10px;
+    background: white;
+}
+.card .desktop{
+    height: 405px;
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px;
+}
+.card .mobile{
+    display: none;
+}
+.card span{
+    font-size: 12px;
+    letter-spacing: 3px;
+    color: hsl(228, 12%, 48%);
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin-top: 30px;
+    margin-right: 160px;
+}
+.card h1{
+    font-family: 'Fraunces', serif;
+    font-size: 28px;
+    position: absolute;
+    line-height: 30px;
+    width: 200px;
+    right: 0;
+    margin-top: 60px;
+    margin-right: 50px;
+}
+.card p{
+    font-size: 14px;
+    color:hsl(228, 12%, 48%);
+    position: absolute;
+    width: 230px;
+    right: 0;
+    margin-top: 11rem;
+    margin-right: 1rem;
+}
+.price{
+    width: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 11rem;
+    margin-left: 1.5rem;
+  
+}
+.price h3{
+    color: hsl(158, 36%, 37%);
+    font-size: 28px;
+    font-family: 'Fraunces', serif;
+}
+.price h6{
+    font-size: 12px;
+    color:hsl(228, 12%, 48%);
+    text-decoration:line-through;
+}
+button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 220px;
+    height: 45px;
+    border-radius: 10px;
+    border: none;
+    margin-bottom: 1.5rem;
+    margin-right: 2rem;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background: hsl(158, 36%, 37%);
+    color: white;
+    cursor: pointer;
+}
+button:hover{
+    background: hsl(158, 39%, 29%);
+}
+.card button img{
+    height: 15px;
+    margin-right: 1rem;
+}
+
+@media (max-width: 570px){
+    .card .desktop{
+        display: none;
+    }
+    .card .mobile{
+        display: block;
+        width: 100%;
+        height: 250px;
+        border-top-right-radius: 10px;
+        border-top-left-radius: 10px;
+    }
+    .card{
+        position: relative;
+        display: flex;
+        flex-wrap: wrap;
+        width: 360px;
+        height: 600px;
+        border-radius: 10px;
+        background: white;
+    }
+    .card span{
+        margin-top: 16.5rem;
+        margin-right: 15rem;
+    }
+    .card h1{
+        font-size: 32px;
+        line-height: 30px;
+        width: 300px;
+        right: 0;
+        margin-top: 290px;
+        margin-right: 2rem;
+    }
+    .card p{
+        font-size: 14px;
+        width: 290px;
+        right: 0;
+        margin-top: 23rem;
+        margin-right: 2rem;
+        line-height: 25px;
+    }
+    .price{
+        width: 200px;
+        margin-top: 1rem;
+        margin-left: 1.5rem;
+    }
+    .price h3{
+        font-size: 32px;
+    }
+    button{
+        width: 300px;
+    }
+}
